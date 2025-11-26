@@ -458,29 +458,25 @@
 
 <h1 id="planet-cycles-feladat-specifikalas">Planet Cycles - feladat specifikálás</h1>
 <p><strong>Time limit:</strong> 1.00 s &nbsp;|&nbsp; <strong>Memory limit:</strong> 512 MB</p>
-<p>You are playing a game consisting of $n$ planets. Each planet has a teleporter to another planet (or the planet itself).</p>
+<p>You are playing a game consisting of <em>n</em> planets. Each planet has a teleporter to another planet (or the planet itself).</p>
 <p>You start on a planet and then travel through teleporters until you reach a planet that you have already visited before.</p>
 <p>Your task is to calculate for each planet the number of teleportations there would be if you started on that planet.</p>
 <h2 id="input">Input</h2>
-<p>The first input line has an integer $n$: the number of planets. The planets are numbered $1, 2, \dots, n$.</p>
-<p>The second line has $n$ integers $t_1, t_2, \dots, t_n$: for each planet, the destination of the teleporter. It is possible that $t_i = i$.</p>
+<p>The first input line has an integer <em>n</em>: the number of planets. The planets are numbered 1, 2, ..., <em>n</em>.</p>
+<p>The second line has <em>n</em> integers <em>t_1</em>, <em>t_2</em>, ..., <em>t_n</em>: for each planet, the destination of the teleporter. It is possible that <em>t_i</em> = <em>i</em>.</p>
 <h2 id="output">Output</h2>
-<p>Print $n$ integers according to the problem statement.</p>
+<p>Print <em>n</em> integers according to the problem statement.</p>
 <h2 id="constraints">Constraints</h2>
 <ul>
-<li>$1 \le n \le 2 \cdot 10^5$</li>
-<li>$1 \le t_i \le n$</li>
+<li>1 &lt;= <em>n</em> &lt;= 2 * 10^5</li>
+<li>1 &lt;= <em>t_i</em> &lt;= <em>n</em></li>
 </ul>
 <h2 id="example">Example</h2>
-<p><strong>Input:</strong></p>
-<pre><code class="language-text">5
-2 4 3 1 4
-
-
-#Planets cycles - implentáció
-
-```java
-import java.io.BufferedReader;
+<p><strong>Input:</strong>
+5
+2 4 3 1 4</p>
+<h1 id="planets-cycles-implentacio">Planets cycles - implentáció</h1>
+<pre><code class="language-java">import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
