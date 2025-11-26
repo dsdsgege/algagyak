@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Algagyak
 
 theme:
   name: material
@@ -9,4 +9,5 @@ theme:
 
 nav:
   - Home: index.md
-  - Planet Cycles: planet_cycles.md
+  - Planets Cycles: planets_cycles.md
+  - Grid Paths I. : grid_paths.md

@@ -9,26 +9,26 @@
       
       
       
+        <link rel="prev" href="../planets_cycles/">
       
-        <link rel="next" href="planets_cycles/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Algagyak</title>
+        <title>Grid Paths I. - Algagyak</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#algoritmus-es-adatszerkezetek-a-gyakorlatban" class="md-skip">
+        <a href="#grid-paths-feladat-specifikalas" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Algagyak" class="md-header__button md-logo" aria-label="Algagyak" data-md-component="logo">
+    <a href=".." title="Algagyak" class="md-header__button md-logo" aria-label="Algagyak" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Grid Paths I.
             
           </span>
         </div>
@@ -184,7 +184,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Algagyak" class="md-nav__button md-logo" aria-label="Algagyak" data-md-component="logo">
+    <a href=".." title="Algagyak" class="md-nav__button md-logo" aria-label="Algagyak" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -194,6 +194,60 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planets_cycles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planets Cycles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
     
       
       
@@ -218,7 +272,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Grid Paths I.
   
 
     
@@ -229,14 +283,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    Grid Paths I.
   
 
     
@@ -262,10 +316,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bevezetes" class="md-nav__link">
+  <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bevezetés
+        Input
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constraints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
       
     </span>
   </a>
@@ -276,60 +363,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="planets_cycles/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Planets Cycles
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="grid_paths/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Grid Paths I.
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -361,10 +394,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bevezetes" class="md-nav__link">
+  <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bevezetés
+        Input
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constraints
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
       
     </span>
   </a>
@@ -388,10 +454,87 @@
 
 
 
-<h1 id="algoritmus-es-adatszerkezetek-a-gyakorlatban">Algoritmus és adatszerkezetek a gyakorlatban</h1>
-<h2 id="bevezetes">Bevezetés</h2>
-<p>Ez az oldal az algoritmusok és adatszerkezetek a gyakorlatban című tárgyhoz tartozó statikus dokumentáció. Itt kerülnek listázásra az évkörben elvégzett feladatok. </p>
-<p>A navigáció egyes elemei megfeleltethőek egy elvégzett feladatnak.</p>
+<h1 id="grid-paths-feladat-specifikalas">Grid Paths - feladat specifikálás</h1>
+<p><strong>Time limit:</strong> 1.00 s &nbsp;|&nbsp; <strong>Memory limit:</strong> 512 MB</p>
+<p>Consider an $n \times n$ grid whose squares may have traps. It is not allowed to move to a square with a trap.</p>
+<p>Your task is to calculate the number of paths from the upper-left square to the lower-right square. You can only move right or down.</p>
+<h2 id="input">Input</h2>
+<p>The first input line has an integer $n$: the size of the grid.</p>
+<p>After this, there are $n$ lines that describe the grid. Each line has $n$ characters: <code>.</code> denotes an empty cell, and <code>*</code> denotes a trap.</p>
+<h2 id="output">Output</h2>
+<p>Print the number of paths modulo $10^9 + 7$.</p>
+<h2 id="constraints">Constraints</h2>
+<ul>
+<li>$1 \le n \le 1000$</li>
+</ul>
+<h2 id="example">Example</h2>
+<p><strong>Input:</strong></p>
+<pre><code class="language-text">4
+....
+.*..
+...*
+*...
+
+
+# Grid Paths - implementáció
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+
+public class Main {
+    private static final int MOD = 1_000_000_000 + 7;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String firstLine = reader.readLine();
+        int size = Integer.parseInt(firstLine);
+
+        String[][] grid = new String[size][size];
+        int[][] dp = new int[size][size];
+
+        for (int i = 0; i &lt; size; i++) {
+            grid[i] = reader.readLine().split(&quot;&quot;);
+        }
+
+        if (&quot;*&quot;.equals(grid[0][0])) {
+            System.out.println(0);
+            return;
+        }
+        dp[0][0] = 1;
+
+        for (int i = 0; i &lt; size; i++) {
+            for (int j = 0; j &lt; size; j++) {
+                if (i == 0 &amp;&amp; j == 0) {
+                    continue;
+                }
+
+                if (&quot;*&quot;.equals(grid[i][j])) {
+                    dp[i][j] = 0;
+                    continue;
+                }
+
+                if (i &gt; 0) {
+                    dp[i][j] += dp[i-1][j];
+                }
+
+                if (j &gt; 0) {
+                    dp[i][j] += dp[i][j-1];
+                }
+                dp[i][j] = dp[i][j] % MOD;
+            }
+        }
+
+        System.out.println(dp[size-1][size-1]);
+    }
+}
+
+</code></pre>
+<h1 id="grid-paths-feltoltes">Grid paths - feltöltés</h1>
+<p><img alt="feltöltésről készült kép" src="../site/assets/images/gird_paths_upload.JPG" /></p>
 
 
 
@@ -441,10 +584,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>

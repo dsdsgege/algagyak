@@ -1,15 +1,7 @@
-# Algoritmus és adatszerkezetek gyakorlat
+# Algoritmus és adatszerkezetek a gyakorlatban
 
-## Commands
+## Bevezetés
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Ez az oldal az algoritmusok és adatszerkezetek a gyakorlatban című tárgyhoz tartozó statikus dokumentáció. Itt kerülnek listázásra az évkörben elvégzett feladatok. 
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+A navigáció egyes elemei megfeleltethőek egy elvégzett feladatnak.
