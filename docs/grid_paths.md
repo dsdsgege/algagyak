@@ -1,37 +1,40 @@
-# Grid Paths - feladat specifikálás
+# Grid Paths I.
+
+## Feladat specifikáció
+
 
 **Time limit:** 1.00 s &nbsp;|&nbsp; **Memory limit:** 512 MB
 
-Consider an $n \times n$ grid whose squares may have traps. It is not allowed to move to a square with a trap.
+Consider an *n* x *n* grid whose squares may have traps. It is not allowed to move to a square with a trap.
 
 Your task is to calculate the number of paths from the upper-left square to the lower-right square. You can only move right or down.
 
-## Input
+### Input
 
-The first input line has an integer $n$: the size of the grid.
+The first input line has an integer *n*: the size of the grid.
 
-After this, there are $n$ lines that describe the grid. Each line has $n$ characters: `.` denotes an empty cell, and `*` denotes a trap.
+After this, there are *n* lines that describe the grid. Each line has *n* characters: `.` denotes an empty cell, and `*` denotes a trap.
 
-## Output
+### Output
 
-Print the number of paths modulo $10^9 + 7$.
+Print the number of paths modulo 10^9 + 7.
 
-## Constraints
+### Constraints
 
-* $1 \le n \le 1000$
+* 1 <= *n* <= 1000
 
-## Example
+### Example
 
 **Input:**
-```text
-4
-....
-.*..
-...*
-*...
+4 <br>
+.... <br>
+.*.. <br>
+...* <br>
+*... <br>
 
 
-# Grid Paths - implementáció
+## Implementáció
+
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -86,8 +89,7 @@ public class Main {
         System.out.println(dp[size-1][size-1]);
     }
 }
-
 ```
 
-# Grid paths - feltöltés
+## feltöltés
 ![feltöltésről készült kép](../site/assets/images/gird_paths_upload.JPG)

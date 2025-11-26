@@ -265,24 +265,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Grid Paths I.
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -299,69 +281,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Input
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Constraints
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -387,58 +306,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Input
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#constraints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Constraints
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -455,30 +322,28 @@
 
 
 <h1 id="grid-paths-feladat-specifikalas">Grid Paths - feladat specifikálás</h1>
+<h1 id="grid-paths">Grid Paths</h1>
 <p><strong>Time limit:</strong> 1.00 s &nbsp;|&nbsp; <strong>Memory limit:</strong> 512 MB</p>
-<p>Consider an $n \times n$ grid whose squares may have traps. It is not allowed to move to a square with a trap.</p>
+<p>Consider an <em>n</em> x <em>n</em> grid whose squares may have traps. It is not allowed to move to a square with a trap.</p>
 <p>Your task is to calculate the number of paths from the upper-left square to the lower-right square. You can only move right or down.</p>
 <h2 id="input">Input</h2>
-<p>The first input line has an integer $n$: the size of the grid.</p>
-<p>After this, there are $n$ lines that describe the grid. Each line has $n$ characters: <code>.</code> denotes an empty cell, and <code>*</code> denotes a trap.</p>
+<p>The first input line has an integer <em>n</em>: the size of the grid.</p>
+<p>After this, there are <em>n</em> lines that describe the grid. Each line has <em>n</em> characters: <code>.</code> denotes an empty cell, and <code>*</code> denotes a trap.</p>
 <h2 id="output">Output</h2>
-<p>Print the number of paths modulo $10^9 + 7$.</p>
+<p>Print the number of paths modulo 10^9 + 7.</p>
 <h2 id="constraints">Constraints</h2>
 <ul>
-<li>$1 \le n \le 1000$</li>
+<li>1 &lt;= <em>n</em> &lt;= 1000</li>
 </ul>
 <h2 id="example">Example</h2>
-<p><strong>Input:</strong></p>
-<pre><code class="language-text">4
+<p><strong>Input:</strong>
+4
 ....
-.*..
-...*
-*...
-
-
-# Grid Paths - implementáció
-```java
-import java.io.BufferedReader;
+.<em>..
+...</em>
+*...</p>
+<h1 id="grid-paths-implementacio">Grid Paths - implementáció</h1>
+<pre><code class="language-java">import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
