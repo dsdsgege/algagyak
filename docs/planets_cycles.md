@@ -104,4 +104,4 @@ public class Main {
 ```
 
 ## Feltöltés
-![feltöltésről készült kép](./assets/images/planet_cycle.png)
+![feltöltésről készült kép](./assets/images/planet_cycles.png)

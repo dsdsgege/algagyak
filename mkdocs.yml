@@ -13,6 +13,7 @@ markdown_extensions:
       linenums: true      # line numbers
       pygments_lang_class: true
       pygments_style: dracula     # code style
+  - pymdownx.superfences
 
 nav:
   - Home: index.md
