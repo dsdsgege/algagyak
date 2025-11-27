@@ -103,5 +103,5 @@ public class Main {
 }
 ```
 
-## feltöltés
-![feltöltésről készült kép](../site/assets/images/planets_cycles_upload.JPG)
+## Feltöltés
+![feltöltésről készült kép](./assets/images/planet_cycle.png)

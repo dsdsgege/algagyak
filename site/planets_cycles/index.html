@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#planet-cycles-feladat-specifikalas" class="md-skip">
+        <a href="#planets-cycles" class="md-skip">
           Skip to content
         </a>
       
@@ -291,6 +291,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#feladat-specifikacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feladat specifikáció
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feladat specifikáció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -300,8 +312,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -311,8 +323,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#constraints" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -322,12 +334,39 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implentacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implentáció
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feltoltes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feltöltés
       
     </span>
   </a>
@@ -396,6 +435,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#feladat-specifikacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feladat specifikáció
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feladat specifikáció">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -405,8 +456,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -416,8 +467,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#constraints" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -427,12 +478,39 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implentacio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implentáció
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feltoltes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feltöltés
       
     </span>
   </a>
@@ -456,26 +534,27 @@
 
 
 
-<h1 id="planet-cycles-feladat-specifikalas">Planet Cycles - feladat specifikálás</h1>
+<h1 id="planets-cycles">Planets Cycles</h1>
+<h2 id="feladat-specifikacio">Feladat specifikáció</h2>
 <p><strong>Time limit:</strong> 1.00 s &nbsp;|&nbsp; <strong>Memory limit:</strong> 512 MB</p>
 <p>You are playing a game consisting of <em>n</em> planets. Each planet has a teleporter to another planet (or the planet itself).</p>
 <p>You start on a planet and then travel through teleporters until you reach a planet that you have already visited before.</p>
 <p>Your task is to calculate for each planet the number of teleportations there would be if you started on that planet.</p>
-<h2 id="input">Input</h2>
+<h3 id="input">Input</h3>
 <p>The first input line has an integer <em>n</em>: the number of planets. The planets are numbered 1, 2, ..., <em>n</em>.</p>
 <p>The second line has <em>n</em> integers <em>t_1</em>, <em>t_2</em>, ..., <em>t_n</em>: for each planet, the destination of the teleporter. It is possible that <em>t_i</em> = <em>i</em>.</p>
-<h2 id="output">Output</h2>
+<h3 id="output">Output</h3>
 <p>Print <em>n</em> integers according to the problem statement.</p>
-<h2 id="constraints">Constraints</h2>
+<h3 id="constraints">Constraints</h3>
 <ul>
 <li>1 &lt;= <em>n</em> &lt;= 2 * 10^5</li>
 <li>1 &lt;= <em>t_i</em> &lt;= <em>n</em></li>
 </ul>
-<h2 id="example">Example</h2>
+<h3 id="example">Example</h3>
 <p><strong>Input:</strong>
-5
+5 <br>
 2 4 3 1 4</p>
-<h1 id="planets-cycles-implentacio">Planets cycles - implentáció</h1>
+<h2 id="implentacio">Implentáció</h2>
 <pre><code class="language-java">import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -543,6 +622,8 @@ public class Main {
     }
 }
 </code></pre>
+<h2 id="feltoltes">Feltöltés</h2>
+<p><img alt="feltöltésről készült kép" src="../site/assets/images/planets_cycle.png" /></p>
 
 
 

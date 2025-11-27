@@ -91,5 +91,5 @@ public class Main {
 }
 ```
 
-## feltöltés
-![feltöltésről készült kép](../site/assets/images/gird_paths_upload.JPG)
+## Feltöltés
+![feltöltésről készült kép](./assets/images/grid_paths.png)

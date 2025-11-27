@@ -7,6 +7,13 @@ theme:
     primary: teal
     accent: teal
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true      # line numbers
+      pygments_lang_class: true
+      pygments_style: dracula     # code style
+
 nav:
   - Home: index.md
   - Planets Cycles: planets_cycles.md
