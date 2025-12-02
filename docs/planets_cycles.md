@@ -40,37 +40,38 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
- 
+
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int planetCount = Integer.parseInt(reader.readLine());
- 
+
         int[] teleporterDestinations = new int[planetCount];
         StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
         for (int i = 0; i < planetCount; i++) {
             teleporterDestinations[i] = Integer.parseInt(tokenizer.nextToken()) - 1;
         }
- 
+
         int[] totalTeleportations = new int[planetCount];
         boolean[] visitedPlanets = new boolean[planetCount];
         int[] pathPositionMap = new int[planetCount];
- 
+
         for (int i = 0; i < planetCount; i++) {
             if (!visitedPlanets[i]) {
                 ArrayList<Integer> currentTraversalPath = new ArrayList<>();
                 int currentPlanet = i;
- 
+
+                // build current path
                 while (!visitedPlanets[currentPlanet]) {
                     visitedPlanets[currentPlanet] = true;
                     pathPositionMap[currentPlanet] = currentTraversalPath.size();
                     currentTraversalPath.add(currentPlanet);
                     currentPlanet = teleporterDestinations[currentPlanet];
                 }
- 
+
                 long lengthFromCollisionNode = 0;
                 int cycleLength = 0;
- 
+
                 if (totalTeleportations[currentPlanet] != 0) {
                     lengthFromCollisionNode = totalTeleportations[currentPlanet];
                     for (int j = 0; j < currentTraversalPath.size(); j++) {
@@ -80,12 +81,12 @@ public class Main {
                 } else {
                     int cycleStartIndex = pathPositionMap[currentPlanet];
                     cycleLength = currentTraversalPath.size() - cycleStartIndex;
- 
+
                     for (int j = cycleStartIndex; j < currentTraversalPath.size(); j++) {
                         int planetInCycle = currentTraversalPath.get(j);
                         totalTeleportations[planetInCycle] = cycleLength;
                     }
- 
+
                     for (int j = 0; j < cycleStartIndex; j++) {
                         int planetLeadingToCycle = currentTraversalPath.get(j);
                         totalTeleportations[planetLeadingToCycle] = cycleLength + (cycleStartIndex - j);
@@ -93,7 +94,7 @@ public class Main {
                 }
             }
         }
- 
+
         StringBuilder outputBuilder = new StringBuilder();
         for (int i = 0; i < planetCount; i++) {
             outputBuilder.append(totalTeleportations[i]).append(" ");
